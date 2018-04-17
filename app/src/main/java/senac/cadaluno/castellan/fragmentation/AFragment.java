@@ -13,8 +13,8 @@ import android.widget.TextView;
  * A simple {@link Fragment} subclass.
  */
 public class AFragment extends Fragment {
-    private View v;
     private TextView tv;
+    private View v;
 
     public AFragment() {
         // Required empty public constructor
@@ -27,7 +27,7 @@ public class AFragment extends Fragment {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_a, container, false);
         tv = v.findViewById(R.id.txtFrag1);
-        tv.setText("FRAGMENTO A ALTERADO !");
+        tv.setText(R.string.frag);
         return v;
     }
 
